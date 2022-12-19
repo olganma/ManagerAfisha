@@ -14,12 +14,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter</artifactId>
         <version>5.7.0</version>
         <scope>test</scope>
     </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -37,6 +39,7 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.5</version>
 
+                <executions>
                 <execution>
                     <id>prepare-agent</id>
                     <goals>
@@ -71,6 +74,7 @@
                         </rules>
                     </configuration>
                 </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
