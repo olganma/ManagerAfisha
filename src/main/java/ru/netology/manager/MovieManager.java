@@ -1,3 +1,6 @@
+package ru.netology.manager;
+import ru.netology.domain.Movie;
+
 import java.util.Arrays;
 
 public class MovieManager {

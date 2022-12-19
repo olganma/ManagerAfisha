@@ -1,3 +1,4 @@
+package ru.netology.domain;
 public class Movie {
     private String name;
     private String genre;
